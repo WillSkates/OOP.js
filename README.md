@@ -53,3 +53,7 @@ Import oop to use inheritance and pass the parent class variable to the wrapper 
 	})(animal);
 
 	```
+
+##License
+
+	See "LICENSE" file.
