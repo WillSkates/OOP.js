@@ -6,7 +6,7 @@ A set of methods that help with object orientated programming in javascript.
 
 ##Installation
 
-	npm install oop.js
+	npm install OOP.js
 
 ##Usage - extends.
 
