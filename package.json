@@ -1,5 +1,5 @@
 {
-  "name": "OOP.js",
+  "name": "oop.js",
   "version": "1.0.0",
   "description": "A set of methods that help with object orientated javascript programming.",
   "main": "OOP.js",
@@ -17,6 +17,7 @@
     "Javascript"
   ],
   "author": "Will Skates",
+  "email": "itstrue@thisbe.ws",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/WillSkates/OOP.js/issues"
