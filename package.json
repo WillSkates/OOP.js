@@ -1,0 +1,25 @@
+{
+  "name": "OOP",
+  "version": "1.0.0",
+  "description": "A set of methods that help with object orientated javascript programming.",
+  "main": "OOP.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:WillSkates/OOP.js.git"
+  },
+  "keywords": [
+    "Object",
+    "Orientated",
+    "OOP",
+    "Javascript"
+  ],
+  "author": "Will Skates",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/WillSkates/OOP.js/issues"
+  },
+  "homepage": "https://github.com/WillSkates/OOP.js"
+}
