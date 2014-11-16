@@ -21,26 +21,26 @@
 7 verbose parsed url   href: '.' }
 8 silly lockFile 3a52ce78- .
 9 verbose lock . C:\Users\Will\AppData\Roaming\npm-cache\3a52ce78-.lock
-10 verbose tar pack [ 'C:\\Users\\Will\\AppData\\Roaming\\npm-cache\\OOP.js\\1.0.0\\package.tgz',
+10 verbose tar pack [ 'C:\\Users\\Will\\AppData\\Roaming\\npm-cache\\oop.js\\1.0.0\\package.tgz',
 10 verbose tar pack   '.' ]
-11 verbose tarball C:\Users\Will\AppData\Roaming\npm-cache\OOP.js\1.0.0\package.tgz
+11 verbose tarball C:\Users\Will\AppData\Roaming\npm-cache\oop.js\1.0.0\package.tgz
 12 verbose folder .
-13 info prepublish OOP.js@1.0.0
+13 info prepublish oop.js@1.0.0
 14 silly lockFile 1f1177db-tar tar://.
 15 verbose lock tar://. C:\Users\Will\AppData\Roaming\npm-cache\1f1177db-tar.lock
-16 silly lockFile 0f0a3bee-m-cache-OOP-js-1-0-0-package-tgz tar://C:\Users\Will\AppData\Roaming\npm-cache\OOP.js\1.0.0\package.tgz
-17 verbose lock tar://C:\Users\Will\AppData\Roaming\npm-cache\OOP.js\1.0.0\package.tgz C:\Users\Will\AppData\Roaming\npm-cache\0f0a3bee-m-cache-OOP-js-1-0-0-package-tgz.lock
+16 silly lockFile 2b6048db-m-cache-oop-js-1-0-0-package-tgz tar://C:\Users\Will\AppData\Roaming\npm-cache\oop.js\1.0.0\package.tgz
+17 verbose lock tar://C:\Users\Will\AppData\Roaming\npm-cache\oop.js\1.0.0\package.tgz C:\Users\Will\AppData\Roaming\npm-cache\2b6048db-m-cache-oop-js-1-0-0-package-tgz.lock
 18 silly lockFile 1f1177db-tar tar://.
 19 silly lockFile 1f1177db-tar tar://.
-20 silly lockFile 0f0a3bee-m-cache-OOP-js-1-0-0-package-tgz tar://C:\Users\Will\AppData\Roaming\npm-cache\OOP.js\1.0.0\package.tgz
-21 silly lockFile 0f0a3bee-m-cache-OOP-js-1-0-0-package-tgz tar://C:\Users\Will\AppData\Roaming\npm-cache\OOP.js\1.0.0\package.tgz
-22 silly lockFile b67387c9-g-npm-cache-OOP-js-1-0-0-package C:\Users\Will\AppData\Roaming\npm-cache\OOP.js\1.0.0\package
-23 verbose lock C:\Users\Will\AppData\Roaming\npm-cache\OOP.js\1.0.0\package C:\Users\Will\AppData\Roaming\npm-cache\b67387c9-g-npm-cache-OOP-js-1-0-0-package.lock
-24 silly lockFile b67387c9-g-npm-cache-OOP-js-1-0-0-package C:\Users\Will\AppData\Roaming\npm-cache\OOP.js\1.0.0\package
-25 silly lockFile b67387c9-g-npm-cache-OOP-js-1-0-0-package C:\Users\Will\AppData\Roaming\npm-cache\OOP.js\1.0.0\package
+20 silly lockFile 2b6048db-m-cache-oop-js-1-0-0-package-tgz tar://C:\Users\Will\AppData\Roaming\npm-cache\oop.js\1.0.0\package.tgz
+21 silly lockFile 2b6048db-m-cache-oop-js-1-0-0-package-tgz tar://C:\Users\Will\AppData\Roaming\npm-cache\oop.js\1.0.0\package.tgz
+22 silly lockFile 9e7f89f9-g-npm-cache-oop-js-1-0-0-package C:\Users\Will\AppData\Roaming\npm-cache\oop.js\1.0.0\package
+23 verbose lock C:\Users\Will\AppData\Roaming\npm-cache\oop.js\1.0.0\package C:\Users\Will\AppData\Roaming\npm-cache\9e7f89f9-g-npm-cache-oop-js-1-0-0-package.lock
+24 silly lockFile 9e7f89f9-g-npm-cache-oop-js-1-0-0-package C:\Users\Will\AppData\Roaming\npm-cache\oop.js\1.0.0\package
+25 silly lockFile 9e7f89f9-g-npm-cache-oop-js-1-0-0-package C:\Users\Will\AppData\Roaming\npm-cache\oop.js\1.0.0\package
 26 silly lockFile 3a52ce78- .
 27 silly lockFile 3a52ce78- .
-28 silly publish { name: 'OOP.js',
+28 silly publish { name: 'oop.js',
 28 silly publish   version: '1.0.0',
 28 silly publish   description: 'A set of methods that help with object orientated javascript programming.',
 28 silly publish   main: 'OOP.js',
@@ -54,35 +54,52 @@
 28 silly publish   homepage: 'https://github.com/WillSkates/OOP.js',
 28 silly publish   readme: '#OOP.js\r\n\r\nA set of methods that help with object orientated programming in javascript.\r\n\r\n**Note**: All credit goes to the coffescript homepage from where the code originated (http://coffeescript.org/#classes).\r\n\r\n##Installation\r\n\r\n\tnpm install OOP.js\r\n\r\n##Usage - extends.\r\n\r\nAssuming your classes are laid out in the following way....\r\n\r\n\t\r\n\t```js\r\n\r\n\tvar Dog;\r\n\r\n\tDog = (function() {\r\n\r\n\t\tfunction Dog()\r\n\t\t{\r\n\r\n\t\t};\r\n\r\n\t\treturn Dog;\r\n\r\n\t})();\r\n\r\n\t```\r\n\r\nImport oop to use inheritance and pass the parent class variable to the wrapper function.\r\n\r\n\t```js\r\n\r\n\tvar OOP = require(\'oop\'),\r\n\t\tAnimal = require(\'animal\');\r\n\r\n\tvar Dog;\r\n\r\n\tDog = (function(_super) {\r\n\r\n\t\tOOP.__extends(Dog, _super);\r\n\r\n\t\tfunction Dog()\r\n\t\t{\r\n\r\n\t\t};\r\n\r\n\t\treturn Dog;\r\n\r\n\t})(animal);\r\n\r\n\t```\r\n\r\n##License\r\n\r\n\tSee "LICENSE" file.',
 28 silly publish   readmeFilename: 'README.md',
-28 silly publish   gitHead: '0c158b64e04863172e5907873834871d14b0b958',
-28 silly publish   _id: 'OOP.js@1.0.0',
-28 silly publish   _shasum: 'de31216a08debc3dd36e6a7ffd26b0efae47ea38',
+28 silly publish   gitHead: '5542ced063473411c942663f7830ca065b51a525',
+28 silly publish   _id: 'oop.js@1.0.0',
+28 silly publish   _shasum: '9077f576566e3ca7a7ebe078d7332a80ae45c199',
 28 silly publish   _from: '.' }
-29 verbose request where is /OOP.js
+29 verbose request where is /oop.js
 30 verbose request registry https://registry.npmjs.org/
-31 verbose request id db93053908d0834b
-32 verbose url raw /OOP.js
-33 verbose url resolving [ 'https://registry.npmjs.org/', './OOP.js' ]
-34 verbose url resolved https://registry.npmjs.org/OOP.js
-35 verbose request where is https://registry.npmjs.org/OOP.js
-36 info trying registry request attempt 1 at 04:39:21
-37 http PUT https://registry.npmjs.org/OOP.js
-38 http 403 https://registry.npmjs.org/OOP.js
-39 verbose headers { date: 'Sun, 16 Nov 2014 04:39:30 GMT',
+31 verbose request id 440caf48d0ac6ba0
+32 verbose url raw /oop.js
+33 verbose url resolving [ 'https://registry.npmjs.org/', './oop.js' ]
+34 verbose url resolved https://registry.npmjs.org/oop.js
+35 verbose request where is https://registry.npmjs.org/oop.js
+36 info trying registry request attempt 1 at 04:40:06
+37 http PUT https://registry.npmjs.org/oop.js
+38 http 403 https://registry.npmjs.org/oop.js
+39 verbose headers { date: 'Sun, 16 Nov 2014 04:40:15 GMT',
 39 verbose headers   server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
 39 verbose headers   'content-type': 'application/json',
 39 verbose headers   'cache-control': 'max-age=60',
-39 verbose headers   'content-length': '76',
+39 verbose headers   'content-length': '17582',
 39 verbose headers   'accept-ranges': 'bytes',
 39 verbose headers   via: '1.1 varnish',
-39 verbose headers   'x-served-by': 'cache-lcy1127-LCY',
+39 verbose headers   'x-served-by': 'cache-ams4135-AMS',
 39 verbose headers   'x-cache': 'MISS',
 39 verbose headers   'x-cache-hits': '0',
-39 verbose headers   'x-timer': 'S1416112769.967426,VS0,VE171',
+39 verbose headers   'x-timer': 'S1416112814.601308,VS0,VE655',
 39 verbose headers   'keep-alive': 'timeout=10, max=50',
 39 verbose headers   connection: 'Keep-Alive' }
 40 error publish Failed PUT 403
-41 error Error: forbidden New packages must have all-lowercase names: OOP.js
+41 error Error: forbidden user: thisbews not authorized to modify oop.js
+41 error Changed: description "## 介绍" -> "A set of methods that help with object orientated javascript programming."
+41 error Changed: dist-tags.latest "0.0.2" -> "1.0.0"
+41 error Added: versions.1.0.0
+41 error Changed: readme "# OOP.JS\u000a\u000a## 介绍\u000a\u000a功能强大、适应场景广的JavaScript OOP库。\u000a\u000a去除js中冗余、晦涩的噪音代码。\u000a\u000a<blockquote>\u000aHow to do --> What to do\u000a</blockquote>\u000a\u000a* 名称一次定义，支持调用父类同名方法；\u000a* 广泛应用描述器模式；\u000a* 强大的 metaclass 功能。\u000a\u000a### 适用平台\u000a\u000a* nodejs\u000a* 浏览器 _开发中_\u000a* KISSY 已发布至 [kissy gallery](http://gallery.kissyui.com/oop/0.1/guide/index.html)\u000a\u000a### 安装及使用\u000a\u000a#### nodejs\u000a\u000a```\u000anpm install oop.js\u000a```\u000a\u000a```\u000avar oop = require('oop.js');\u000aoop.install(); // 输出 Class/property/staticmethod 成员到 global\u000a\u000avar MyClass = new Class({\u000a\u0009a: property(…),\u000a\u0009c: staticmethod(…)\u000a});\u000a```\u000a\u000a#### kissy\u000a\u000a```\u000aKISS.use('gallery/oop/0.1/index', function(S, oop) {\u000a\u0009oop.install();\u000a\u000a\u0009var MyClass = new Class({\u000a\u0009\u0009a: property(...),\u000a\u0009\u0009c: staticmethod(...)\u000a\u0009});\u000a});\u000a```\u000a\u000a## 特征\u000a\u000a* 单继承\u000a* 多mixin\u000a* property\u000a* 实例方法和静态方法\u000a* metaclass\u000a\u000a## 修饰器\u000a\u000a在此OOP库中，大量使用了修饰器模式。\u000a\u000a修饰器是一个函数，用于包装另一个函数，这种包装的首要目的是透明的修改或增强被包装对象的行为。但在定义后，函数对象本身就被传递给修饰器函数，修饰器函数返回一个新函数替代原始的函数。\u000a\u000a可以使用多个修饰器，装饰器将按照出现的先后顺序应用。\u000a\u000a修饰器也可以接受参数，返回在调用时使用函数作为参数的函数。\u000a\u000a在其他语言中，修饰器一般通过`@`进行调用。由于语法限制，在js中使用函数调用形式进行调用。\u000a\u000a在Python中：\u000a\u000a```\u000aclass A(object):\u000a  @staticmethod\u000a  @mydecorator('a', 'b')\u000a  def myMethod():\u000a    pass\u000a```\u000a\u000a在js中：\u000a\u000a```\u000avar A = new Class(Object, function() {\u000a  this.myMethod = staticmethod(mydecorator('a', 'b')(function() {\u000a  }));\u000a});\u000a```\u000a\u000aMootools的`Function.prototype.overloadSetter`就是一个典型的修饰器应用。\u000a\u000a## 创建一个类\u000a\u000a### 构造函数风格\u000a\u000a通过构造函数扩充 `this` 实现：\u000a\u000a```\u000avar MyClass = new Class(function() {\u000a\u000a\u0009// 这里的 this 指向类的构造成员\u000a\u0009this.member1 = 1;\u000a\u0009this.member2 = function() { };\u000a\u0009\u000a});\u000a```\u000a\u000a### 原型成员风格\u000a\u000a通过 key-value object 实现：\u000a\u000a```\u000avar MyClass = new Class({\u000a\u0009member1 : 1,\u000a\u0009member2: function() { }\u000a});\u000a```\u000a\u000a## 成员类型\u000a\u000a有几种常用成员类型：\u000a\u000a* 普通属性\u000a* property属性\u000a* 实例方法\u000a* 静态方法\u000a* 构造方法\u000a\u000a### 普通属性\u000a\u000a定义在类上的一个普通静态属性。\u000a\u000a由于JS中区分传值引用与地址引用，普通的静态属性需要注意对象在类的创建过程中是*地址引用*的，也就是说没有自动帮你将这些对象成员自动拷贝一份到实例上。\u000a\u000a如果需要为每个实例设置不同的初始化值，需要在构造函数中对已经产生的实例进行赋值。或者使用 property 属性也可实现类似的功能。\u000a\u000a```\u000avar MyClass = new Class(function() {\u000a\u0009// 普通属性\u000a\u0009this.field = 1;\u000a\u0009this.field2 = {foo:1, bar:2};\u000a});\u000a\u000avar myClass = new MyClass();\u000avar myClass2 = new MyClass();\u000a\u000a// field2为地址引用，所有实例公用一个\u000amyClass.field2.foo = 11;\u000a\u000aconsole.log(myClass2.field2.foo); // ==> 11\u000a```\u000a\u000a### property 属性\u000a\u000a可以设置 getter 和 setter 方法的属性，通过 obj.get('propertyName') 获取属性值，obj.set('propertyName', propertyValue) 设置属性值。\u000a\u000a\u000a```\u000avar MyClass = new Class(function() {\u000a\u000a\u0009// property属性\u000a\u0009this.prop = property(function() {\u000a\u0009\u0009// 这个函数是getter\u000a\u0009\u0009return this.__prop;\u000a\u0009}, function(value) {\u000a\u0009\u0009// 这个函数是setter\u000a\u0009\u0009this.__prop = value;\u000a\u0009});\u000a\u000a});\u000a\u000avar myClass = new MyClass();\u000a\u000amyClass.set('prop', 'test');\u000aconsole.log(myClass.get('prop')); // ==> test\u000aconsole.log(myClass.prop); // ==> test\u000a```\u000a\u000a### 实例方法\u000a\u000a```\u000avar MyClass = new Class(function() {\u000a\u000a    // instancemethod，实例方法，默认方法类型。\u000a    this.myInstanceMethod = function(arg1, arg2) {\u000a\u0009\u0009console.log(this);\u000a    };\u000a\u0009\u000a});\u000a\u000avar myClass = new MyClass();\u000a\u000amyClass.myInstanceMethod(arg1, arg2); // ==> myClass\u000a```\u000a\u000a### 静态方法\u000a\u000a通过 `staticmethod` 方法包装后的函数成员会被作为类的静态方法存在。\u000a\u000a静态在类上和类的实例上均可调用。\u000a\u000a在实例和在类上调用时，所有参数一对一的传递。\u000a\u000a```\u000avar MyClass = new Class(function() {\u000a\u000a\u0009// staticmethod，静态方法。\u000a\u0009this.myStaticMethod = staticmethod(function(arg1, arg2) {\u000a\u0009});\u000a\u0009\u000a});\u000a\u000a// 在类上调用\u000aMyClass.myStaticMethod(arg1, arg2);\u000a\u000avar myClass = new MyClass();\u000a\u000a// 在实例上调用\u000amyClass.myStaticMethod(arg1, arg2);\u000a```\u000a\u000a### 构造方法\u000a\u000a构造方法是一个特殊的实例方法，其会在生成类实例（new）时被调用。\u000a\u000a由于地址引用的原因，对每个实例独有的成员一般是在构造函数中进行创建。\u000a\u000a```\u000avar MyClass = new Class(function() {\u000a\u0009// 构造方法，在new的时候会执行\u000a\u0009this.initialize = function() {\u000a\u0009\u0009var self = this;\u000a\u0009\u0009self.foo = 1;\u000a\u0009\u0009self.bar = {}; // 每个实例都会有一个不同的bar属性对象\u000a\u0009\u0009console.log('base class!');\u000a\u0009};\u000a});\u000a```\u000a\u000a## 继承\u000a\u000a单继承，通过new Class的第一个参数指定父类\u000a\u000a在继承方法中不会自动调用父类同名方法，需要手工调用：\u000a\u000a* 直接调用父类上的方法\u000a* `oop.parent` 调用父类_同名_方法\u000a* `oop.parent.bind(arguments.callee)` 返回的函数可以在闭包内调用父类同名方法\u000a\u000a```\u000avar MyClass2 = new Class(MyClass, function() {\u000a\u0009/**\u000a\u0009 * 覆盖了父类的同名方法\u000a\u0009 * @override\u000a\u0009 */\u000a\u0009this.initialize = function() {\u000a\u0009\u0009var self = this;\u000a\u0009\u0009MyClass.prototype.initialize.apply(this, arguments); // 调用父类的同名方法\u000a\u0009\u0009// 或 oop.parent(self); // this.parent指向父类同名方法\u000a\u0009\u0009// 可以在闭包内调用的 parent\u000a\u0009\u0009var parent = oop.parent.bind(arguments.callee);\u000a\u0009\u0009;(function() {\u000a\u0009\u0009\u0009parent(self);\u000a\u0009\u0009});\u000a\u0009\u0009console.log('inherit class!');\u000a\u0009}\u000a});\u000a\u000avar myClass2 = new MyClass2(); // ==> base class! inherit class!\u000a```\u000a\u000a### 私有成员\u000a\u000a在 oop.js 中，双下划线开头的成员被认为是私有成员，不会被继承，比如：\u000a\u000a```\u000avar A = new Class({\u000a    __a: 1,\u000a    a: 1\u000a});\u000a\u000avar B = new Class(A, {\u000a});\u000a\u000avar b = new B();\u000a\u000aconsole.log(b.__a) // ==> undefined\u000a\u000a```\u000a\u000a\u0009然而由于各个 js 引擎的支持程度不一样，在某些环境下私有成员的特性仅仅是个__约定__，而并没有从技术上进行限制，请遵守这个约定。\u000a\u000a### 继承原生类\u000a\u000aoop.js 可以把任意非 oop.js 维护的类作为基类使用。\u000a\u000a```\u000avar MyArray = new Class(Array, {\u000a\u0009load: function() {\u000a\u0009\u0009this.push(1);\u000a\u0009}\u000a});\u000a\u000avar arr = new MyArray();\u000a\u000aarr.load();\u000a\u000aarr.length // ==> 1\u000a\u000a```\u000a\u000a## Mixin\u000a\u000a通过 mixin，可以将另外一个类的成员 mix 到本类中，与继承机制不同，可以同时 mix 多个类。\u000a\u000a```\u000avar MyClass = new Class({\u000a\u0009'__mixins__': [Events] // mixin 了 Events 这个类\u000a});\u000a\u000avar myClass = new MyClass();\u000a\u000amyClass.addEvent('click', function() {}); // addEvent是从Events类中mixin进来的\u000a```\u000a\u000a## 动态特性\u000a\u000a一个创建好的类也可以重新修改：\u000a\u000a```\u000a// ...接以上代码...\u000aMyClass.__setattr__('addEvent', function(self) {\u000a\u0009alert('changed!');\u000a});\u000a\u000amyClass.addEvent(); // ==> changed!\u000a```\u000a\u000a也可以扩展出新的成员：\u000a\u000a```\u000aMyClass.__setattr__('myNewCustomMethod', function() {\u000a\u0009alert('new method!');\u000a});\u000a```\u000a\u000a修改、扩展后，继成于此类的类上的同名成员也会变化；而mixin了此类的其他类上的方法则不会变化。\u000a\u000a## metaclass\u000a\u000a使用 metaclass 提供了对类的创建过程的处理机制\u000a\u000a### 效果\u000a\u000a使用metaclass可以为上层库实现很多十分智能的特性，我们看以下代码：\u000a\u000a\u000a```\u000a\u000avar MyComponent = new Class(Component, function() {\u000a\u000a\u0009this.onclick = function(event) {\u000a\u0009\u0009console.log('onclick');\u000a\u0009};\u000a\u0009\u000a\u0009this._show = function() {\u000a\u0009\u0009console.log('show1');\u000a\u0009};\u000a\u0009\u000a\u0009this.loadData = function(api, callback) {\u000a\u0009\u0009callback();\u000a\u0009};\u000a\u000a});\u000a\u000avar my = new MyComponent();\u000amy.fireEvent('click'); // onclick\u000amy.addEvent('show', function(event) {\u000a\u0009console.log('show2');\u000a\u0009event.preventDefault();\u000a});\u000amy.show(); // show2\u000amy.loadData('http://xxx').then(...);\u000a\u000a```\u000a\u000a以上代码来自基于 oop.js 开发的 ui 组件库 oui 的真实应用。\u000a\u000a* 使用一个下划线开头的方法在调用时自动触发同名事件；\u000a* 使用`on`开头的方法会自动注册为事件；\u000a* 使用`load`开头的方法自动套用 promise；\u000a\u000a作为对比，我们看一下没有 metaclass 的 oop.js 需要写的代码：\u000a\u000a```\u000avar MyComponent = new Class(Component, function() {\u000a\u0009\u000a\u0009this.initialize = function() {\u000a\u0009\u0009this.addEvent('click', function(event) {\u000a\u0009\u0009\u0009console.log('onclick')\u000a\u0009\u0009});\u000a\u0009};\u000a\u000a\u0009this.show = function() {\u000a\u0009\u0009console.log('show1');\u000a\u0009\u0009this.fireEvent('show');\u000a\u0009};\u000a\u000a\u0009this.loadData = function(api) {\u000a\u0009\u0009var deferred = promise.defer();\u000a\u0009\u0009deferred.resolve();\u000a\u0009\u0009return deferred.promise;\u000a\u0009};\u000a});\u000a```\u000a\u000a### Type\u000a\u000ametaclass 是一个继成于 `Type` 的类\u000a\u000a在 JavaScript 中，对象（Object）和函数（Function）就像是鸡和蛋的关系，函数也是一个对象，new一个函数产生一个新的对象。\u000a\u000a但是，`Function`这个特殊的对象却缺少了继承的能力，`Function`在 js 中是一个一级继承类（仅仅继承于Object），`Function`的子类不再具有`Function`的特性，其实例无法被调用，看下面的例子：\u000a\u000a```\u000avar func1 = new Function();\u000afunc1(); // 可以调用\u000a\u000avar MyFunc = function() {};\u000aMyFunc.prototype = Object.create(Function.prototype);\u000avar func2 = new MyFunc();\u000afunc2(); // 无法调用！\u000a```\u000a\u000a在 oop.js 中，将 `Function` 的特性进行了扩展，使其拥有了继承的能力，这就是`Type`。所有的类都继成于`Object`，所有的类都是`Type`的实例。\u000a\u000a### 创建一个metaclass\u000a\u000a继承于`Type`的类有两个特殊的方法：\u000a\u000a* `__new__` 是一个静态方法，在类的构造阶段，非常早期的时候调用，可以用于修改类的定义，需要返回构造好的类，默认返回 `Type.prototype.__new__.call(metaclass, name, base, dict)`\u000a* `initialize` 是一个实例方法，其 `this` 指向创建好的类，可以用于对已经创建好的类进行修改，在将类确定前的最后一次调用，没有返回值。\u000a\u000a```\u000a\u0009var MyMetaClass = new Class(Type, {\u000a\u0009\u0009__new__: function(metaclass, name, base, dict) {\u000a\u0009\u0009\u0009return Type.prototype.__new__.call(metaclass, name, base, dict);\u000a\u0009\u0009},\u000a\u0009\u0009initialize: function(name, base, dict) {\u000a\u0009\u0009\u0009// 这里的 this 为创建出来的类\u000a\u0009\u0009}\u000a\u0009});\u000a```\u000a\u000a###使用一个metaclass\u000a\u000a```\u000avar MyClass = new Class({\u000a\u0009__metaclass__ : MyMetaClass\u000a});\u000a```\u000a\u000a或者（开发中）\u000a\u000a```\u000avar MyClass2 = new MyMetaClass();\u000a```\u000a\u000a`__metaclass__` 成员也会继承，所有子类自动适用此 metaclass\u000a\u000a## AOP（开发中）\u000a\u000a```\u000aoop.before;\u000aoop.after;\u000aoop.around;\u000a```\u000a\u000a## 常用 Decorators\u000a\u000a### fireevent\u000a\u000a```\u000avar MyClass = new Class({\u000a\u0009load: fireevent(function(event) {\u000a\u0009\u000a\u0009});\u000a});\u000a\u000avar obj = new MyClass();\u000aobj.on('load', funciton() {\u000a\u000a);\u000aobj.load();\u000a\u000a```\u000a\u000a### deferred\u000a```\u000avar MyClass = new Class({\u000a\u0009load: deferred(function(callback) {\u000a\u0009\u0009callback();\u000a\u0009});\u000a});\u000a\u000avar obj = new MyClass();\u000aobj.load().then();\u000a\u000a```\u000a\u000a\u000a## TODO\u000a\u000a* 与loader结合，使得类可以获得自己的名字" -> "#OOP.js\u000d\u000a\u000d\u000aA set of methods that help with object orientated programming in javascript.\u000d\u000a\u000d\u000a**Note**: All credit goes to the coffescript homepage from where the code originated (http://coffeescript.org/#classes).\u000d\u000a\u000d\u000a##Installation\u000d\u000a\u000d\u000a\u0009npm install OOP.js\u000d\u000a\u000d\u000a##Usage - extends.\u000d\u000a\u000d\u000aAssuming your classes are laid out in the following way....\u000d\u000a\u000d\u000a\u0009\u000d\u000a\u0009```js\u000d\u000a\u000d\u000a\u0009var Dog;\u000d\u000a\u000d\u000a\u0009Dog = (function() {\u000d\u000a\u000d\u000a\u0009\u0009function Dog()\u000d\u000a\u0009\u0009{\u000d\u000a\u000d\u000a\u0009\u0009};\u000d\u000a\u000d\u000a\u0009\u0009return Dog;\u000d\u000a\u000d\u000a\u0009})();\u000d\u000a\u000d\u000a\u0009```\u000d\u000a\u000d\u000aImport oop to use inheritance and pass the parent class variable to the wrapper function.\u000d\u000a\u000d\u000a\u0009```js\u000d\u000a\u000d\u000a\u0009var OOP = require('oop'),\u000d\u000a\u0009\u0009Animal = require('animal');\u000d\u000a\u000d\u000a\u0009var Dog;\u000d\u000a\u000d\u000a\u0009Dog = (function(_super) {\u000d\u000a\u000d\u000a\u0009\u0009OOP.__extends(Dog, _super);\u000d\u000a\u000d\u000a\u0009\u0009function Dog()\u000d\u000a\u0009\u0009{\u000d\u000a\u000d\u000a\u0009\u0009};\u000d\u000a\u000d\u000a\u0009\u0009return Dog;\u000d\u000a\u000d\u000a\u0009})(animal);\u000d\u000a\u000d\u000a\u0009```\u000d\u000a\u000d\u000a##License\u000d\u000a\u000d\u000a\u0009See \"LICENSE\" file."
+41 error Changed: time.modified "2013-09-29T06:53:08.734Z" -> "2014-11-16T04:40:38.115Z"
+41 error Added: time.1.0.0
+41 error Changed: repository.url "git://github.com/ObjectJS/oop.git" -> "git@github.com:WillSkates/OOP.js.git"
+41 error Changed: keywords.0 "OOP" -> "Object"
+41 error Changed: keywords.1 "class" -> "Orientated"
+41 error Changed: keywords.2 "mixin" -> "OOP"
+41 error Changed: keywords.3 "extend" -> "Javascript"
+41 error Deleted: keywords.4
+41 error Changed: license "BSD" -> "MIT"
+41 error Added: homepage
+41 error Added: author
+41 error Added: bugs
+41 error Added: _attachments: oop.js
 41 error     at RegClient.<anonymous> (c:\Program Files (x86)\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:308:14)
 41 error     at Request._callback (c:\Program Files (x86)\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:246:65)
 41 error     at Request.self.callback (c:\Program Files (x86)\nodejs\node_modules\npm\node_modules\request\request.js:236:22)
