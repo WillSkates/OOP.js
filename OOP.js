@@ -6,9 +6,7 @@ OOP = {};
 OOP.__hasProp = {}.hasOwnProperty;
 OOP.__extends = function(child, parent) {
 
-	for (var key in parent) {
-		if (OOP.__hasProp.call(parent, key)) child[key] = parent[key];
-	}
+	OOP.__useTrait(child, parent);
 
 	function ctor() { this.constructor = child; }
 
@@ -20,5 +18,15 @@ OOP.__extends = function(child, parent) {
 	return child;
 
 };
+OOP.__useTrait = function(child, trait) {
+
+	/**
+	 * We just do the copy here to paste the methods from the trait into our object.
+	 */
+	for (var key in trait) {
+		if (OOP.__hasProp.call(trait, key)) child[key] = trait[key];
+	}
+
+}
 
 module.exports = OOP;
