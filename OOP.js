@@ -6,7 +6,9 @@ OOP = {};
 OOP.__hasProp = {}.hasOwnProperty;
 OOP.__extends = function(child, parent) {
 
-	OOP.__useTrait(child, parent);
+	for (var key in parent) {
+		if (OOP.__hasProp.call(parent, key)) child[key] = parent[key];
+	}
 
 	function ctor() { this.constructor = child; }
 
@@ -23,8 +25,8 @@ OOP.__useTrait = function(child, trait) {
 	/**
 	 * We just do the copy here to paste the methods from the trait into our object.
 	 */
-	for (var key in trait) {
-		if (OOP.__hasProp.call(trait, key)) child[key] = trait[key];
+	for(key in trait.prototype) {
+		child.prototype[key] = trait.prototype[key];
 	}
 
 }
